@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="თანამედროვე ქართული Landing Page - განაახლეთ თქვენი ბიზნესი"
+    />
+    <title>ნოვა | თქვენი წარმატების პარტნიორი</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: BPG Arial (fallback to system Georgian fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ========================================================
+         HEADER & NAVIGATION
+         ======================================================== -->
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="მთავარი ნავიგაცია">
+        <!-- Logo -->
+        <a href="#hero" class="nav__logo" aria-label="ნოვა - მთავარ გვერდზე გადასვლა">
+          <span class="nav__logo-icon" aria-hidden="true">◈</span>
+          <span class="nav__logo-text">ნოვა</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav__list" role="list">
+          <li class="nav__item">
+            <a href="#hero" class="nav__link">მთავარი</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">ჩვენს შესახებ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#features" class="nav__link">შესაძლებლობები</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">კონტაქტი</a>
+          </li>
+        </ul>
+
+        <!-- CTA Button (desktop) -->
+        <a href="#contact" class="btn btn--primary nav__cta">დაგვიკავშირდით</a>
+
+        <!-- Hamburger Button (mobile) -->
+        <button
+          class="nav__hamburger"
+          id="hamburger"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="მენიუს გახსნა"
+        >
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="მობილური მენიუ">
+        <ul class="mobile-menu__list" role="list">
+          <li><a href="#hero" class="mobile-menu__link">მთავარი</a></li>
+          <li><a href="#about" class="mobile-menu__link">ჩვენს შესახებ</a></li>
+          <li><a href="#features" class="mobile-menu__link">შესაძლებლობები</a></li>
+          <li><a href="#contact" class="mobile-menu__link">კონტაქტი</a></li>
+          <li>
+            <a href="#contact" class="btn btn--primary mobile-menu__cta">დაგვიკავშირდით</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ========================================================
+         MAIN CONTENT
+         ======================================================== -->
+    <main>
+      <!-- ======================================================
+           HERO SECTION
+           ====================================================== -->
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <!-- Decorative blobs -->
+        <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+        <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+        <div class="hero__blob hero__blob--3" aria-hidden="true"></div>
+
+        <div class="container hero__container">
+          <!-- Text Content -->
+          <div class="hero__content">
+            <p class="hero__eyebrow">🚀 ახალი თაობის პლატფორმა</p>
+            <h1 class="hero__heading" id="hero-heading">
+              წარმატება იწყება<br />
+              <span class="hero__heading--accent">სწორი არჩევანით</span>
+            </h1>
+            <p class="hero__subheading">
+              ნოვა გთავაზობთ ინოვაციურ გადაწყვეტებს თქვენი ბიზნესის
+              განვითარებისათვის. ჩვენ ვქმნით მომავალს — დღეს.
+            </p>
+            <!-- CTA Buttons -->
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary btn--lg">
+                <span>დაწყება</span>
+                <span class="btn__icon" aria-hidden="true">→</span>
+              </a>
+              <a href="#about" class="btn btn--secondary btn--lg">მეტი ინფორმაცია</a>
+            </div>
+            <!-- Social Proof -->
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <span class="hero__stat-number">500+</span>
+                <span class="hero__stat-label">კლიენტი</span>
+              </div>
+              <div class="hero__stat-divider" aria-hidden="true"></div>
+              <div class="hero__stat">
+                <span class="hero__stat-number">98%</span>
+                <span class="hero__stat-label">კმაყოფილება</span>
+              </div>
+              <div class="hero__stat-divider" aria-hidden="true"></div>
+              <div class="hero__stat">
+                <span class="hero__stat-number">5 წელი</span>
+                <span class="hero__stat-label">გამოცდილება</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Illustration / Decorative Card -->
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__card">
+              <div class="hero__card-header">
+                <span class="hero__card-dot hero__card-dot--red"></span>
+                <span class="hero__card-dot hero__card-dot--yellow"></span>
+                <span class="hero__card-dot hero__card-dot--green"></span>
+              </div>
+              <div class="hero__card-body">
+                <div class="hero__chart">
+                  <div class="hero__bar" style="--h: 40%"></div>
+                  <div class="hero__bar" style="--h: 65%"></div>
+                  <div class="hero__bar" style="--h: 50%"></div>
+                  <div class="hero__bar hero__bar--accent" style="--h: 85%"></div>
+                  <div class="hero__bar" style="--h: 70%"></div>
+                  <div class="hero__bar hero__bar--accent" style="--h: 95%"></div>
+                </div>
+                <p class="hero__card-label">📈 ზრდის ტენდენცია</p>
+                <div class="hero__card-metric">
+                  <span class="hero__card-value">+127%</span>
+                  <span class="hero__card-badge">↑ ამ წელს</span>
+                </div>
+              </div>
+            </div>
+            <!-- Floating badge -->
+            <div class="hero__badge hero__badge--top">
+              <span>✅</span>
+              <span>პროექტი დასრულდა</span>
+            </div>
+            <div class="hero__badge hero__badge--bottom">
+              <span>⚡</span>
+              <span>სწრაფი შედეგი</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           ABOUT SECTION
+           ====================================================== -->
+      <section class="about" id="about" aria-labelledby="about-heading">
+        <div class="container about__container">
+          <!-- Text Column -->
+          <div class="about__content">
+            <p class="section__eyebrow">ჩვენს შესახებ</p>
+            <h2 class="section__heading" id="about-heading">
+              ვინ ვართ და<br />
+              <span class="accent-text">რას ვაკეთებთ</span>
+            </h2>
+            <p class="about__text">
+              ნოვა არის 2019 წელს დაარსებული ტექნოლოგიური კომპანია, რომლის
+              მიზანია ქართული ბიზნესების ციფრული ტრანსფორმაცია. ჩვენი გუნდი
+              შედგება 30-ზე მეტი გამოცდილი სპეციალისტისაგან.
+            </p>
+            <p class="about__text">
+              ჩვენ გვჯერა, რომ ტექნოლოგია უნდა იყოს ხელმისაწვდომი ყველასთვის.
+              სწორედ ამიტომ, ჩვენი პლატფორმა შექმნილია სიმარტივისა და
+              ეფექტიანობის პრინციპებზე.
+            </p>
+            <ul class="about__list">
+              <li class="about__list-item">
+                <span class="about__check" aria-hidden="true">✓</span>
+                ინდივიდუალური მიდგომა ყველა კლიენტისადმი
+              </li>
+              <li class="about__list-item">
+                <span class="about__check" aria-hidden="true">✓</span>
+                24/7 ტექნიკური მხარდაჭერა
+              </li>
+              <li class="about__list-item">
+                <span class="about__check" aria-hidden="true">✓</span>
+                გამჭვირვალე პრაისინგი და შეთანხმებები
+              </li>
+            </ul>
+          </div>
+
+          <!-- Media / Card Column -->
+          <div class="about__media">
+            <div class="about__card">
+              <div class="about__card-icon" aria-hidden="true">🏆</div>
+              <h3 class="about__card-title">საუკეთესო გუნდი</h3>
+              <p class="about__card-desc">
+                ჩვენი სპეციალისტები ფლობენ საერთაშორისო სერტიფიკატებს და
+                მუდმივად სრულყოფენ ცოდნას.
+              </p>
+              <div class="about__avatars" aria-label="გუნდის წევრები">
+                <span class="about__avatar" title="გიორგი">გ</span>
+                <span class="about__avatar" title="ნინო">ნ</span>
+                <span class="about__avatar" title="დავითი">დ</span>
+                <span class="about__avatar" title="მარიამი">მ</span>
+                <span class="about__avatar about__avatar--more">+26</span>
+              </div>
+            </div>
+            <!-- Decorative accent shapes -->
+            <div class="about__shape about__shape--1" aria-hidden="true"></div>
+            <div class="about__shape about__shape--2" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           FEATURES SECTION
+           ====================================================== -->
+      <section class="features" id="features" aria-labelledby="features-heading">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="section__header">
+            <p class="section__eyebrow">შესაძლებლობები</p>
+            <h2 class="section__heading" id="features-heading">
+              რატომ უნდა<br />
+              <span class="accent-text">აირჩიოთ ნოვა</span>
+            </h2>
+            <p class="section__subheading">
+              ჩვენი პლატფორმა გთავაზობთ ყველაფერს, რაც თქვენს ბიზნესს
+              სჭირდება ციფრულ სამყაროში წარმატებისთვის.
+            </p>
+          </div>
+
+          <!-- Feature Cards Grid -->
+          <div class="features__grid">
+            <!-- Card 1 -->
+            <article class="feature-card" aria-label="სიჩქარე და ეფექტიანობა">
+              <div class="feature-card__icon" aria-hidden="true">⚡</div>
+              <h3 class="feature-card__title">სიჩქარე და ეფექტიანობა</h3>
+              <p class="feature-card__desc">
+                ჩვენი ოპტიმიზებული ინფრასტრუქტურა უზრუნველყოფს მაქსიმალურ
+                სიჩქარეს და 99.9% uptime-ს. თქვენი კლიენტები ყოველთვის
+                ნახავენ სწრაფ გამოხმაურებას.
+              </p>
+              <a href="#contact" class="feature-card__link">
+                გაიგე მეტი <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="feature-card feature-card--featured" aria-label="უსაფრთხოება">
+              <div class="feature-card__badge">პოპულარული</div>
+              <div class="feature-card__icon" aria-hidden="true">🔒</div>
+              <h3 class="feature-card__title">სრული უსაფრთხოება</h3>
+              <p class="feature-card__desc">
+                მრავალდონიანი დაცვის სისტემა, SSL დაშიფვრა და GDPR
+                სტანდარტებთან სრული შესაბამისობა. თქვენი მონაცემები
+                ყოველთვის დაცულია.
+              </p>
+              <a href="#contact" class="feature-card__link">
+                გაიგე მეტი <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="feature-card" aria-label="ანალიტიკა">
+              <div class="feature-card__icon" aria-hidden="true">📊</div>
+              <h3 class="feature-card__title">ჭკვიანი ანალიტიკა</h3>
+              <p class="feature-card__desc">
+                რეალურ დროში მონაცემთა ანალიზი და ვიზუალიზაცია. მიიღეთ
+                სწორი გადაწყვეტილებები ციფრებზე დაყრდნობით და გაზარდეთ
+                შემოსავალი.
+              </p>
+              <a href="#contact" class="feature-card__link">
+                გაიგე მეტი <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           CONTACT SECTION
+           ====================================================== -->
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact__container">
+          <!-- Contact Info -->
+          <div class="contact__info">
+            <p class="section__eyebrow">კონტაქტი</p>
+            <h2 class="section__heading" id="contact-heading">
+              დაგვიკავშირდით<br />
+              <span class="accent-text">დღესვე</span>
+            </h2>
+            <p class="contact__desc">
+              გაქვთ კითხვები? ჩვენი გუნდი მზად არის დაგეხმაროთ. გამოგვიგზავნეთ
+              შეტყობინება და ჩვენ დაგიკავშირდებით 24 საათის განმავლობაში.
+            </p>
+            <div class="contact__details">
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">📧</span>
+                <span>info@nova.ge</span>
+              </div>
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">📞</span>
+                <span>+995 32 222 33 44</span>
+              </div>
+              <div class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">📍</span>
+                <span>თბილისი, საქართველო</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact__form-wrapper">
+            <form
+              class="contact__form"
+              id="contact-form"
+              novalidate
+              aria-label="საკონტაქტო ფორმა"
+            >
+              <!-- Name Field -->
+              <div class="form__group">
+                <label class="form__label" for="name">სახელი და გვარი</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="მაგ. გიორგი მელიქიშვილი"
+                  autocomplete="name"
+                  aria-required="true"
+                />
+                <span class="form__error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form__group">
+                <label class="form__label" for="email">ელ. ფოსტა</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="მაგ. giorgi@example.com"
+                  autocomplete="email"
+                  aria-required="true"
+                />
+                <span class="form__error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form__group">
+                <label class="form__label" for="message">შეტყობინება</label>
+                <textarea
+                  class="form__input form__textarea"
+                  id="message"
+                  name="message"
+                  placeholder="მოგვიყევით თქვენი პროექტის შესახებ..."
+                  rows="5"
+                  aria-required="true"
+                ></textarea>
+                <span class="form__error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button class="btn btn--primary btn--full" type="submit" id="submit-btn">
+                <span id="btn-text">შეტყობინების გაგზავნა</span>
+                <span class="btn__icon" aria-hidden="true">✉</span>
+              </button>
+
+              <!-- Success Message (hidden by default) -->
+              <div
+                class="form__success"
+                id="form-success"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+                hidden
+              >
+                <span class="form__success-icon" aria-hidden="true">🎉</span>
+                <div>
+                  <strong>შეტყობინება გაიგზავნა!</strong>
+                  <p>მადლობა! ჩვენ მალე დაგიკავშირდებით.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================
+         FOOTER
+         ======================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__container">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo footer__logo" aria-label="ნოვა - მთავარ გვერდზე">
+            <span class="nav__logo-icon" aria-hidden="true">◈</span>
+            <span class="nav__logo-text">ნოვა</span>
+          </a>
+          <p class="footer__tagline">
+            წარმატების პარტნიორი — ყოველ ნაბიჯზე.
+          </p>
+        </div>
+
+        <!-- Footer Nav Links -->
+        <nav class="footer__nav" aria-label="ფუტერის ნავიგაცია">
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#hero" class="footer__link">მთავარი</a></li>
+            <li><a href="#about" class="footer__link">ჩვენს შესახებ</a></li>
+            <li><a href="#features" class="footer__link">შესაძლებლობები</a></li>
+            <li><a href="#contact" class="footer__link">კონტაქტი</a></li>
+          </ul>
+        </nav>
+
+        <!-- Social Media Links -->
+        <div class="footer__social">
+          <a
+            href="#"
+            class="footer__social-link"
+            aria-label="Facebook გვერდი"
+            rel="noopener noreferrer"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="footer__social-link"
+            aria-label="Instagram გვერდი"
+            rel="noopener noreferrer"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="footer__social-link"
+            aria-label="LinkedIn გვერდი"
+            rel="noopener noreferrer"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p class="footer__copyright">
+            &copy; <span id="current-year"></span> ნოვა. ყველა უფლება დაცულია.
+          </p>
+          <p class="footer__made">
+            შექმნილია <span aria-hidden="true">❤</span> სიყვარულით, საქართველოში
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
